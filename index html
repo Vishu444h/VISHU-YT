@@ -1,1 +1,33 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VISHU YT</title>
+    <style>
+        body { font-family: Arial; background:#121212; color:white; margin:0; padding:0; text-align:center; }
+        .top-bar { background:#222; padding:5px 15px; font-size:14px; display:flex; justify-content:space-between; color:white; }
+        .top-bar .left { color:skyblue; text-align:left; }
+        .top-bar .right { text-align:right; }
+        h1 { margin:20px 0; }
+        input[type=text]{ padding:10px; width:60%; border-radius:5px; border:none; }
+        button{ padding:10px 15px; margin-left:5px; border:none; border-radius:5px; cursor:pointer; background:linear-gradient(to right,#ff9900,#ff3300); color:white; }
+        .video-card { background:#222; margin:15px auto; padding:15px; border-radius:10px; max-width:700px; text-align:left; }
+        .video-card iframe { margin-top:10px; border-radius:10px; width:100%; height:400px; }
+        .qualities a { margin-right:10px; text-decoration:none; color:#ff9900; font-weight:bold; }
+        .qualities a:hover{ color:white; }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="left">FOLLOW ME ON INSTA freak_vishu</div>
+        <div class="right">Developer @freak_vishu</div>
+    </div>
+    <h1>VISHU YT</h1>
+    <form method="POST">
+        <input type="text" name="query" placeholder="Search video or song..." required>
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Video cards will be rendered here by Flask if using server -->
+</body>
+</html>
