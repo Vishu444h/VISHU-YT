@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VISHU YT</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="left">
+Developer <span class="green">VISHU!!</span>
+</div>
+
+<div class="right">
+Follow Me On Instagram 
+<span class="blue">Freak_Vishu</span>
+</div>
+
+</header>
+
+<h1 class="title">VISHU YT</h1>
+
+<form method="POST">
+<input type="text" name="search" placeholder="Search YouTube Video or Paste Link">
+<button type="submit">SEARCH</button>
+</form>
+
+<div class="results">
+
+{% for video in results %}
+
+<div class="card">
+
+<h3>{{video.title}}</h3>
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/{{video.link.split('v=')[-1]}}"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+<br>
+
+<a href="{{video.link}}" target="_blank">
+<button>Open On YouTube</button>
+</a>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</body>
+</html>
